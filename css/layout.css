@@ -6,18 +6,15 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.header-logo {
-  grid-column: 1 / span 2;
-  grid-row: 1;
+header {
+  padding: 10px 20px;
 }
-
-.header-nav {
-  grid-column: 1;
-}
-
-.header-login {
-  grid-column: 2;
+h1,
+nav,
+ul,
+li,
+.user-icon {
+  display: inline-block;
 }
 
 .content-left {
@@ -26,10 +23,6 @@ body {
 
 .content-right {
   grid-area: cright;
-}
-
-.footer {
-  grid-area: ft;
 }
 
 .wrapper {
@@ -42,10 +35,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 2fr;
-  grid-template-areas:
-    "header header"
-    "cleft cright"
-    "ft ft";
+  grid-template-areas: "cleft cright";
 }
 
 .wrapper > div {
