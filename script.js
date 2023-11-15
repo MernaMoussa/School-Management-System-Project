@@ -1,14 +1,12 @@
-import mainTemplate from './js/modules/main-template.js';
+const app = document.getElementById('app');
 
-const acs = {};
+function loadContent(page) {
+    const templateId = `${page}-template`;
+    const template = document.getElementById(templateId);
 
-acs.init = () => {
-    const mainContainer = document.querySelector('.main-container');
-    const templateData = {
-        contentLeft: 'Left Content',
-        contentRight: 'Right Content',
-    };
-    mainContainer.innerHTML = mainTemplate.render(templateData);
+    if (template) {
+        app.innerHTML = template.innerHTML;
+    } else {
+        app.innerHTML = '<h2>Page Not Found</h2>';
+    }
 }
-
-acs.init();

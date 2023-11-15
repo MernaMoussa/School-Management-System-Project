@@ -17,31 +17,5 @@ li,
   display: inline-block;
 }
 
-.content-left {
-  grid-area: cleft;
-}
-
-.content-right {
-  grid-area: cright;
-}
-
-.wrapper {
-  border: 2px solid #f76707;
-  border-radius: 5px;
-  background-color: #fff4e6;
-  max-width: 100%;
-  margin: 0 auto;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
-  grid-template-areas: "cleft cright";
-}
-
-.wrapper > div {
-  border: 2px solid #ffa94d;
-  border-radius: 5px;
-  background-color: #ffd8a8;
-  padding: 1em;
-  color: #d9480f;
+footer {
 }
