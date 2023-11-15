@@ -250,3 +250,4 @@ const students = [
         },
     },
 ];
+export { students };
