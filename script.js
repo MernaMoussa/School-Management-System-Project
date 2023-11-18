@@ -1,12 +1,12 @@
+import { generatedHTML, templateId } from "./js/template/home.js";
+
 const app = document.getElementById('app');
-
-function loadContent(page) {
-    const templateId = `${page}-template`;
-    const template = document.getElementById(templateId);
-
-    if (template) {
-        app.innerHTML = template.innerHTML;
+function loadContent(template) {
+    if (template === "page1") {
+        return generatedHTML;
     } else {
-        app.innerHTML = '<h2>Page Not Found</h2>';
+        return '';
     }
 }
+
+app.innerHTML = loadContent(templateId);
