@@ -90,4 +90,4 @@ const teachers = [
         subject: "encryption",
     },
 ];
-export { teachers };
+export default teachers;

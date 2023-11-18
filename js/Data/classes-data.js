@@ -25,4 +25,4 @@ const classes = [
         teacherIds: [113, 114, 115],
     },
 ];
-export { classes };
+export default classes;
