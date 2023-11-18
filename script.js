@@ -1,6 +1,6 @@
 import homeTemplate from "./js/templates/home-template.js";
 import { templateId } from "./js/modules/home-module.js";
-
+import classesTemplate from "./js/templates/classes-template.js"
 
 const acs = {};
 acs.init = () => {
@@ -10,14 +10,12 @@ acs.init = () => {
             app.innerHTML = homeTemplate;
         }
         if (pTemplateId === "classes") {
-            for (let index = 0; index < classes.length; index++) {
-                app.innerHTML = classesTemplate;
-            }
+            app.innerHTML = classesTemplate;
         } else {
             app.innerHTML = '';
         }
     }
-    loadContent(templateId);
+    loadContent("classes");
 }
 
 acs.init();
