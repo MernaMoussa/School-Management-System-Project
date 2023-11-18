@@ -1,6 +1,6 @@
-import template from "./js/templates/home-template.js";
+import homeTemplate from "./js/templates/home-template.js";
 import { templateId } from "./js/modules/home-module.js";
-import { countedStudents } from "./js/modules/home-module.js";
+
 
 const acs = {};
 acs.init = () => {
@@ -8,7 +8,7 @@ acs.init = () => {
     function loadContent(pTemplateId) {
         console.log(pTemplateId)
         if (pTemplateId === "home") {
-            app.innerHTML = template(countedStudents);
+            app.innerHTML = homeTemplate;
         } else {
             app.innerHTML = '';
         }

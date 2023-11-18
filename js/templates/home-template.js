@@ -1,4 +1,5 @@
-export default function template(pCountedStudents, pCountedTeachers, pCountedClassses) {
+import { countedStudents, countedTeachers, countedClasses } from "../modules/home-module.js";
+function template(pCountedStudents, pCountedTeachers, pCountedClassses) {
   return `
   <div class="wrapper" id="page1">
     <div class="left-content">
@@ -16,3 +17,5 @@ export default function template(pCountedStudents, pCountedTeachers, pCountedCla
   </div>
 `;
 }
+const homeTemplate = template(countedStudents, countedTeachers, countedClasses);
+export default homeTemplate
