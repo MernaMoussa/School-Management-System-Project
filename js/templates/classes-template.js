@@ -1,4 +1,4 @@
-import classes from "../data/classes-data.js";
+import classes from "../../school-data/classes-data.js";
 function template() {
     return classes.map(cls => `
         <div class="wrapper">
