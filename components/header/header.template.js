@@ -18,7 +18,7 @@ export default function headerTemplate() {
         <button class="nav-link" id="pills-students-tab" data-bs-toggle="pill" data-bs-target="#pills-students" type="button" role="tab" aria-controls="pills-students" aria-selected="false">Students</button>
       </li>
     </ul>
-    <i class="bi bi-person-circle"></i>
+    <i class="bi bi-person-circle fs-3"></i>
   </div>
 </nav>
     `;
