@@ -2,7 +2,7 @@ import classes from "../school-data/classes-data.js";
 
 function template(pClasses) {
     return pClasses.map(pClass => `
-    <div class="wrapper d-inline-block text-center m-2 p-3 border">
+    <div class="wrapper col-4 d-inline-block text-center m-2 p-3 border">
     <div class="d-flex justify-content-end">
       <button type="button" id="edit" class="btn btn-primary m-1"><i class="bi bi-pencil"></i></button>
       <button type="button" id="remove" class="btn btn-danger m-1"><i class="bi bi-dash-circle"></i></button>
