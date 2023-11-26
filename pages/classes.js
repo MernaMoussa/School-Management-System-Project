@@ -2,8 +2,8 @@ import classes from "../school-data/classes-data.js";
 function template(pClasses) {
     return pClasses.map(pClass => `
         <div class="wrapper">
-            <button type="button" id="edit"><i class="fa fa-regular fa-pen-to-square"></i></button>
-            <button type="button" id="remove"><i class="fa fa-regular fa-circle-minus"></i></button>  
+            <button type="button" id="edit"><i class="bi bi-pencil"></i></button>
+            <button type="button" id="remove"><i class="bi bi-dash-circle"></i></button>  
             <h2>${pClass.name}</h2>
             <p>Teacher IDs: ${pClass.teacherIds.join(', ')}</p>
             <p>Additional text</p>
