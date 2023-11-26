@@ -1,6 +1,7 @@
 const students = [
     {
         id: 2001,
+        classId: 1,
         name: "John Smith",
         departments: "fullstack",
         subjects: {
@@ -11,6 +12,7 @@ const students = [
     },
     {
         id: 2002,
+        classId: 1,
         name: "Jane Doe",
         departments: "fullstack",
         subjects: {
@@ -21,6 +23,7 @@ const students = [
     },
     {
         id: 2003,
+        classId: 1,
         name: "Bob Johnson",
         departments: "fullstack",
         subjects: {
@@ -29,8 +32,32 @@ const students = [
             databases: 60,
         },
     },
+
+    {
+        id: 2019,
+        classId: 1,
+        name: "Ava Davis",
+        departments: "fullstack",
+        subjects: {
+            programming: 50,
+            webDevelopment: 65,
+            databases: 61,
+        },
+    },
+    {
+        id: 2025,
+        classId: 1,
+        name: "Avery Wilson",
+        departments: "fullstack",
+        subjects: {
+            programming: 55,
+            webDevelopment: 60,
+            databases: 65,
+        },
+    },
     {
         id: 2004,
+        classId: 2,
         name: "Emily Davis",
         departments: "cloud",
         subjects: {
@@ -41,6 +68,7 @@ const students = [
     },
     {
         id: 2005,
+        classId: 2,
         name: "Chris Wilson",
         departments: "cloud",
         subjects: {
@@ -51,6 +79,7 @@ const students = [
     },
     {
         id: 2006,
+        classId: 2,
         name: "Anna Miller",
         departments: "cloud",
         subjects: {
@@ -60,7 +89,30 @@ const students = [
         },
     },
     {
+        id: 2020,
+        classId: 2,
+        name: "Liam Johnson",
+        departments: "cloud",
+        subjects: {
+            cloudComputing: 100,
+            virtualization: 98,
+            networking: 97,
+        },
+    },
+    {
+        id: 2024,
+        classId: 2,
+        name: "Logan Lee",
+        departments: "cloud",
+        subjects: {
+            cloudComputing: 95,
+            virtualization: 95,
+            networking: 97,
+        },
+    },
+    {
         id: 2007,
+        classId: 3,
         name: "Tom Brown",
         departments: "dataScience",
         subjects: {
@@ -71,6 +123,7 @@ const students = [
     },
     {
         id: 2008,
+        classId: 3,
         name: "Sara White",
         departments: "dataScience",
         subjects: {
@@ -81,6 +134,7 @@ const students = [
     },
     {
         id: 2009,
+        classId: 3,
         name: "Michael Lee",
         departments: "dataScience",
         subjects: {
@@ -91,6 +145,7 @@ const students = [
     },
     {
         id: 2010,
+        classId: 3,
         name: "Alex Turner",
         departments: "dataScience",
         subjects: {
@@ -100,7 +155,19 @@ const students = [
         },
     },
     {
+        id: 2023,
+        classId: 3,
+        name: "Isabella White",
+        departments: "dataScience",
+        subjects: {
+            machineLearning: 91,
+            dataAnalytics: 85,
+            statistics: 89,
+        },
+    },
+    {
         id: 2011,
+        classId: 4,
         name: "Olivia Clark",
         departments: "mobile",
         subjects: {
@@ -111,6 +178,7 @@ const students = [
     },
     {
         id: 2012,
+        classId: 4,
         name: "Daniel Taylor",
         departments: "mobile",
         subjects: {
@@ -121,6 +189,7 @@ const students = [
     },
     {
         id: 2013,
+        classId: 4,
         name: "Grace Cooper",
         departments: "mobile",
         subjects: {
@@ -130,7 +199,19 @@ const students = [
         },
     },
     {
+        id: 2022,
+        classId: 4,
+        name: "Noah Turner",
+        departments: "mobile",
+        subjects: {
+            mobileDevelopment: 77,
+            appDesign: 65,
+            appTesting: 78,
+        },
+    },
+    {
         id: 2014,
+        classId: 4,
         name: "Henry Adams",
         departments: "mobile",
         subjects: {
@@ -141,6 +222,7 @@ const students = [
     },
     {
         id: 2015,
+        classId: 5,
         name: "Sophia Rogers",
         departments: "security",
         subjects: {
@@ -151,6 +233,7 @@ const students = [
     },
     {
         id: 2016,
+        classId: 5,
         name: "Aiden Parker",
         departments: "security",
         subjects: {
@@ -161,6 +244,7 @@ const students = [
     },
     {
         id: 2017,
+        classId: 5,
         name: "Emma Turner",
         departments: "security",
         subjects: {
@@ -171,6 +255,7 @@ const students = [
     },
     {
         id: 2018,
+        classId: 5,
         name: "Mason Harris",
         departments: "security",
         subjects: {
@@ -180,73 +265,14 @@ const students = [
         },
     },
     {
-        id: 2019,
-        name: "Ava Davis",
-        departments: "fullstack",
-        subjects: {
-            programming: 50,
-            webDevelopment: 65,
-            databases: 61,
-        },
-    },
-    {
-        id: 2020,
-        name: "Liam Johnson",
-        departments: "cloud",
-        subjects: {
-            cloudComputing: 100,
-            virtualization: 98,
-            networking: 97,
-        },
-    },
-    {
         id: 2021,
+        classId: 5,
         name: "Ella Brown",
         departments: "security",
         subjects: {
             networkSecurity: 75,
             cybersecurity: 84,
             encryption: 99,
-        },
-    },
-    {
-        id: 2022,
-        name: "Noah Turner",
-        departments: "mobile",
-        subjects: {
-            mobileDevelopment: 77,
-            appDesign: 65,
-            appTesting: 78,
-        },
-    },
-    {
-        id: 2023,
-        name: "Isabella White",
-        departments: "dataScience",
-        subjects: {
-            machineLearning: 91,
-            dataAnalytics: 85,
-            statistics: 89,
-        },
-    },
-    {
-        id: 2024,
-        name: "Logan Lee",
-        departments: "cloud",
-        subjects: {
-            cloudComputing: 95,
-            virtualization: 95,
-            networking: 97,
-        },
-    },
-    {
-        id: 2025,
-        name: "Avery Wilson",
-        departments: "fullstack",
-        subjects: {
-            programming: 55,
-            webDevelopment: 60,
-            databases: 65,
         },
     },
 ];
